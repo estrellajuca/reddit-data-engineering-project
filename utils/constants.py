@@ -34,5 +34,6 @@ POST_FIELDS = (
     'over_18',
     'edited',
     'spoiler',
-    'stickied'
+    'stickied',
+    'subreddit_subscribers'
 )

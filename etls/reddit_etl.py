@@ -1,5 +1,4 @@
 import sys
-
 import numpy as np
 import pandas as pd
 import praw
@@ -26,6 +25,28 @@ def extract_posts(reddit_instance: Reddit, subreddit:str, time_filter:str, limit
 
     for post in posts:
         post_dict = vars(post)
-        print(f'POST111: {post_dict}')
         post = {key: post_dict[key] for key in POST_FIELDS}
+        post_lists.append(post)
+
+    return post_lists
+
+def transform_data(post_df: pd.DataFrame):
+    post_df['id'] = post_df['id'].astype(str)
+    post_df['title'] = post_df['title'].astype(str)
+    post_df['score'] = post_df['score'].astype(int)
+    post_df['num_comments'] = post_df['num_comments'].astype(int)
+    post_df['author'] = post_df['author'].astype(str)
+    post_df['created_utc'] = pd.to_datetime(post_df['created_utc'], units='s')
+    post_df['url'] = post_df['url'].astype(str)
+    post_df['over_18'] = post_df['over_18'].astype(bool)
+    post_df['edited'] = post_df['edited'].astype(str)
+    post_df['spoiler'] = post_df['spoiler'].astype(str)
+    post_df['stickied'] = post_df['stickied'].astype(str)
+    post_df['subreddit_subscribers'] = post_df['subreddit_subscribers'].astype(int)
+
+    return post_df
+
+def data_to_csv(data: pd.DataFrame, path: str):
+    data.to_csv(path, index= False)
+
 
