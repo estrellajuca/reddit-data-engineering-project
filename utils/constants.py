@@ -35,5 +35,6 @@ POST_FIELDS = (
     'edited',
     'spoiler',
     'stickied',
-    'subreddit_subscribers'
+    'subreddit_subscribers',
+    'selftext'
 )

@@ -6,13 +6,14 @@ from airflow.operators.python import PythonOperator
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pipelines.reddit_pipeline import reddit_pipeline
+from pipelines.aws_s3_pipeline import s3_pipeline
 
 default_args = {
     'owner': 'Juan Estrella',
     'start_date': datetime(2024, 8, 23)
 }
 
-file_postfix = datetime.now().strftime("%Y%m%d")
+file_postfix = datetime.now().strftime("%Y-%m-%d")
 
 dag = DAG(
     dag_id = 'reddit_etl_pipeline',
@@ -28,9 +29,19 @@ extract = PythonOperator(
     python_callable=reddit_pipeline,
     op_kwargs={
         'file_name':f'reddit_{file_postfix}',
-        'subreddit': 'OnePiece',
+        'subreddit': 'Bitcoin',
         'time_filter': 'day',
         'limit':100
     },
     dag = dag
 )
+
+#upload to s3
+
+upload_s3 = PythonOperator(
+    task_id = 's3_loading',
+    python_callable=s3_pipeline,
+    dag=dag
+)
+
+extract >> upload_s3
