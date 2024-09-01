@@ -24,7 +24,6 @@ The pipeline is designed to extract data from Reddit using its API, store the ra
 <img src="https://i.imgur.com/nLKI0ui.png" height="80%" width="80%" />
 <br />
 <br />
-
 ## System Setup
 1. Clone the repository.
    ```bash
@@ -72,11 +71,11 @@ Create the S3 bucket and its folders <br/>
 <br />
 <br />
 
-
 Create an ETL job and a crawler in Glue <br/>
 <img src="https://i.imgur.com/siuDMRR.png" height="80%" width="80%" />
 <br />
 <br />
+
 <img src="https://i.imgur.com/mtziRCn.png" height="80%" width="80%" />
 <br />
 <br />
