@@ -24,10 +24,12 @@ The pipeline is designed to extract data from Reddit using its API, store the ra
 <img src="https://i.imgur.com/nLKI0ui.png" height="80%" width="80%" />
 <br />
 <br />
-## System Setup
+
+<h3>System Setup</h3> 
+
 1. Clone the repository.
    ```bash
-    git clone https://github.com/airscholar/RedditDataEngineering.git
+    git clone https://github.com/estrellajuca/reddit-data-engineering-project.git
    ```
 2. Create a virtual environment.
    ```bash
@@ -71,10 +73,11 @@ Create the S3 bucket and its folders <br/>
 <br />
 <br />
 
-Create an ETL job and a crawler in Glue <br/>
+Create an ETL job in Glue <br/>
 <img src="https://i.imgur.com/siuDMRR.png" height="80%" width="80%" />
 <br />
 <br />
+Create a crawler in Glue for the schema ceation <br/>
 
 <img src="https://i.imgur.com/mtziRCn.png" height="80%" width="80%" />
 <br />
