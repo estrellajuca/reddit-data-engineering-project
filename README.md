@@ -56,7 +56,7 @@ The pipeline is designed to extract data from Reddit using its API, store the ra
     open http://localhost:8080
    ```
 <br>
-<h2>Steps</h2>
+<h3>Steps</h3>
 <p align="center">
 Create a docker image that will contain the airflow services <br/>
 
