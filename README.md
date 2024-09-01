@@ -94,6 +94,12 @@ Connect the database to Redshift and perfom some queries  <br/>
 <img src="https://i.imgur.com/cRpboF7.png" height="80%" width="80%" />
 <br />
 <br />
+Perform data anlysis and create a dashboard using the desired tool  <br/>
+<br>
+
+<img src="https://i.imgur.com/gej3q54.png" height="80%" width="80%" />
+<br />
+<br />
 <!--
  ```diff
 - text in red
