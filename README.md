@@ -65,26 +65,31 @@ Create a docker image that will contain the airflow services <br/>
 <br />
 <br />
 Create the Airflow dags and run them <br/>
+<br>
 
 <img src="https://i.imgur.com/dg0vBw7.png" height="80%" width="80%" />
 <br />
 <br />
 Create the S3 bucket and its folders <br/>
+<br>
 
 <img src="https://i.imgur.com/w4e8kiu.png" height="80%" width="80%" />
 <br />
 <br />
 Create an ETL job in Glue <br/>
+<br>
 
 <img src="https://i.imgur.com/siuDMRR.png" height="80%" width="80%" />
 <br />
 <br />
 Create a crawler in Glue for the schema ceation <br/>
+<br>
 
 <img src="https://i.imgur.com/mtziRCn.png" height="80%" width="80%" />
 <br />
 <br />
 Connect the database to Redshift and perfom some queries  <br/>
+<br>
 
 <img src="https://i.imgur.com/cRpboF7.png" height="80%" width="80%" />
 <br />
