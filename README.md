@@ -59,6 +59,7 @@ The pipeline is designed to extract data from Reddit using its API, store the ra
 <h3>Steps</h3>
 <p align="center">
 Create a docker image that will contain the airflow services <br/>
+<br>
 
 <img src="https://i.imgur.com/WtwLjFA.png" height="80%" width="80%" />
 <br />
