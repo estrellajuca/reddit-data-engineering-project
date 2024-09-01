@@ -72,8 +72,8 @@ Create the S3 bucket and its folders <br/>
 <img src="https://i.imgur.com/w4e8kiu.png" height="80%" width="80%" />
 <br />
 <br />
-
 Create an ETL job in Glue <br/>
+
 <img src="https://i.imgur.com/siuDMRR.png" height="80%" width="80%" />
 <br />
 <br />
