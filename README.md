@@ -21,8 +21,8 @@ The pipeline is designed to extract data from Reddit using its API, store the ra
 <h2>Project walk-through:</h2>
 
 <h3>Pipeline Flow:</h3>
+<br>
 <img src="https://i.imgur.com/nLKI0ui.png" height="80%" width="80%" />
-<br />
 <br />
 
 <h3>System Setup</h3> 
