@@ -82,7 +82,7 @@ Create an ETL job in Glue <br/>
 <img src="https://i.imgur.com/siuDMRR.png" height="80%" width="80%" />
 <br />
 <br />
-Create a crawler in Glue for the schema ceation <br/>
+Create a crawler in Glue for the schema creation <br/>
 <br>
 
 <img src="https://i.imgur.com/mtziRCn.png" height="80%" width="80%" />
